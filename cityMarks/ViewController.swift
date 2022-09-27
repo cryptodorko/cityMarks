@@ -71,6 +71,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             destinationVC.choosenName = selectedName
         }
     }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            self.imageName.remove(at: indexPath.row)
+            self.imageArray.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.bottom)
+        }
+    }
 
 
 }
