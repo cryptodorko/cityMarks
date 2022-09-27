@@ -13,6 +13,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBOutlet weak var tableView: UITableView!
     
+    var selectedName = ""
+    var selectedImage = UIImage()
+    
+    
+    
     var imageArray = [UIImage]()
     var imageName = [String]()
     
@@ -46,6 +51,25 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         content.text = imageName[indexPath.row]
         cell.contentConfiguration = content
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        
+        selectedName = imageName[indexPath.row]
+        selectedImage = imageArray[indexPath.row]
+        
+        performSegue(withIdentifier: "toDetailView", sender: nil)
+    }
+    
+
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toDetailView" {
+            let destinationVC = segue.destination as! SecondViewController
+            destinationVC.choosenImage = selectedImage
+            destinationVC.choosenName = selectedName
+        }
     }
 
 

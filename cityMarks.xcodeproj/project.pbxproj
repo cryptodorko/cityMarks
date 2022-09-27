@@ -13,6 +13,7 @@
 		EC9712F228DB2D8A00076D54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC9712F028DB2D8A00076D54 /* Main.storyboard */; };
 		EC9712F428DB2D8B00076D54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC9712F328DB2D8B00076D54 /* Assets.xcassets */; };
 		EC9712F728DB2D8B00076D54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC9712F528DB2D8B00076D54 /* LaunchScreen.storyboard */; };
+		ECD843FE28E2CAC70063DB2A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD843FD28E2CAC70063DB2A /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		EC9712F328DB2D8B00076D54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC9712F628DB2D8B00076D54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC9712F828DB2D8B00076D54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECD843FD28E2CAC70063DB2A /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				EC9712EA28DB2D8A00076D54 /* AppDelegate.swift */,
 				EC9712EC28DB2D8A00076D54 /* SceneDelegate.swift */,
 				EC9712EE28DB2D8A00076D54 /* ViewController.swift */,
+				ECD843FD28E2CAC70063DB2A /* SecondViewController.swift */,
 				EC9712F028DB2D8A00076D54 /* Main.storyboard */,
 				EC9712F328DB2D8B00076D54 /* Assets.xcassets */,
 				EC9712F528DB2D8B00076D54 /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECD843FE28E2CAC70063DB2A /* SecondViewController.swift in Sources */,
 				EC9712EF28DB2D8A00076D54 /* ViewController.swift in Sources */,
 				EC9712EB28DB2D8A00076D54 /* AppDelegate.swift in Sources */,
 				EC9712ED28DB2D8A00076D54 /* SceneDelegate.swift in Sources */,
